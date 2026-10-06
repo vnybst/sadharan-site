@@ -6,6 +6,7 @@ The public website for the Sadharan app family, served by GitHub Pages. Plain HT
 |---|---|
 | `index.html` | here |
 | `launcher/privacy/index.html` | `docs/privacy-policy.md` in the (private) launcher repo. Change the policy there first, then copy the change here and update the effective date in both. |
+| `money/privacy/index.html` | `docs/privacy-policy.md` in the (private) DhanDisha repo (Sadharan Money). Same rule. |
 
 A new app gets its own folder (`<app>/privacy/index.html`) and a line on the home page.
 
