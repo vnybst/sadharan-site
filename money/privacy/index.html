@@ -11,7 +11,7 @@
 <body>
 <main>
   <h1>Sadharan Money — Privacy Policy</h1>
-  <p class="meta">Effective date: 6 October 2026 (crash report deletion added 7 October 2026)</p>
+  <p class="meta">Effective date: 9 October 2026 (Sadharan Plus purchases, automatic backup and widgets added)</p>
 
   <p>Sadharan Money is a simple, dark app for noting what you spend, made by <strong>Sadharan</strong> ("we", "us").
   This policy explains what the app does with information on your phone.</p>
@@ -24,8 +24,10 @@
   <p>All of the following is saved in the app's private storage on your phone. None of it is sent to us or to anyone else.</p>
   <ul>
     <li><strong>Your money information.</strong> Accounts and their balances, income and expense entries (amount, category,
-    date, note), transfers, monthly budgets and monthly repeating entries.</li>
-    <li><strong>Your choices.</strong> For example the currency you picked and whether you finished the first screen.</li>
+    date, note), transfers, monthly budgets, monthly repeating entries, savings goals, and the assets and loans you add
+    with their values.</li>
+    <li><strong>Your choices.</strong> For example the currency you picked, whether you finished the first screen, the folder
+    and schedule for automatic backup, what each widget shows, and whether Sadharan Plus is unlocked.</li>
   </ul>
 
   <h2>What leaves the phone</h2>
@@ -43,16 +45,34 @@
     <li><strong>Backup to a file.</strong> You can save all your data as one file, anywhere you choose, using Android's file
     picker. The file is not encrypted and holds everything you have entered, so keep it somewhere you trust. We never see it.
     <strong>Restore</strong> reads a file you choose, the same way.</li>
+    <li><strong>Automatic backup</strong> (Sadharan Plus) writes the same kind of file, every day or every week, into a folder
+    you pick, and keeps the newest seven. The files stay in that folder; the app sends them nowhere.</li>
+    <li><strong>Reports</strong> (PDF and Excel) are saved where you choose, like a backup file. We never see them.</li>
+    <li><strong>Buying Sadharan Plus.</strong> The purchase is made and paid in Google Play, under
+    <a href="https://play.google.com/about/play-terms/">Google Play's terms</a> and Google's Privacy Policy. Google handles
+    your payment details; we never see them. The app asks Google Play whether Plus was bought on your Google account, so it
+    can unlock Plus and restore it on a new phone. That answer stays on your phone; the app sends it nowhere. Google sends
+    us the usual order record for each sale (for example the order number, country and price), which we use only for
+    accounting and to help with refunds.</li>
   </ul>
 
   <h2>Permissions</h2>
   <table>
     <thead><tr><th>Permission</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Internet and network state</td><td>Used only by Firebase Crashlytics to send crash reports. The app's own code makes no network calls.</td></tr>
+      <tr><td>Internet and network state</td><td>Used by Firebase Crashlytics to send crash reports, and by Google Play to check a Plus purchase. The app's own code makes no network calls.</td></tr>
+      <tr><td>Google Play billing</td><td>To buy Sadharan Plus, and to check whether it was bought.</td></tr>
+      <tr><td>Run at startup, keep awake</td><td>So automatic backup can run on its schedule, also after the phone restarts.</td></tr>
     </tbody>
   </table>
-  <p>The app asks for nothing else: no contacts, location, camera, microphone, storage or notifications.</p>
+  <p>None of these is asked for on screen; Android grants them when the app is installed. The app asks for nothing else:
+  no contacts, location, camera, microphone, storage or notifications. Folders for backups and reports are chosen by you
+  in Android's own picker, one at a time.</p>
+
+  <h2>Widgets</h2>
+  <p>Widgets you place on your home screen show amounts from the app, such as what you spent today, this month or per
+  category, or a calendar shaded by daily spending. Anyone who can see your home screen can see them, so place them only
+  where you are comfortable. They never show your balance.</p>
 
   <h2>Android backup</h2>
   <p>If Android backup is turned on for your Google account, Android may include the app's data in your device backup,
