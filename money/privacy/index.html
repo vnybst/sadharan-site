@@ -11,7 +11,7 @@
 <body>
 <main>
   <h1>Sadharan Money — Privacy Policy</h1>
-  <p class="meta">Effective date: 9 October 2026 (Sadharan Plus purchases, automatic backup and widgets added)</p>
+  <p class="meta">Effective date: 9 October 2026 (Sadharan Plus purchases, automatic backup, widgets and app lock added)</p>
 
   <p>Sadharan Money is a simple, dark app for noting what you spend, made by <strong>Sadharan</strong> ("we", "us").
   This policy explains what the app does with information on your phone.</p>
@@ -27,7 +27,11 @@
     date, note), transfers, monthly budgets, monthly repeating entries, savings goals, and the assets and loans you add
     with their values.</li>
     <li><strong>Your choices.</strong> For example the currency you picked, whether you finished the first screen, the folder
-    and schedule for automatic backup, what each widget shows, and whether Sadharan Plus is unlocked.</li>
+    and schedule for automatic backup, what each widget shows, whether app lock is on, and whether Sadharan Plus is
+    unlocked.</li>
+    <li><strong>Your country, for the currency.</strong> Until you pick a currency, the app uses the country of your SIM
+    card or mobile network (or else your language setting) to choose one. It reads this on the phone and keeps nothing
+    of it.</li>
   </ul>
 
   <h2>What leaves the phone</h2>
@@ -63,6 +67,7 @@
       <tr><td>Internet and network state</td><td>Used by Firebase Crashlytics to send crash reports, and by Google Play to check a Plus purchase. The app's own code makes no network calls.</td></tr>
       <tr><td>Google Play billing</td><td>To buy Sadharan Plus, and to check whether it was bought.</td></tr>
       <tr><td>Run at startup, keep awake</td><td>So automatic backup can run on its schedule, also after the phone restarts.</td></tr>
+      <tr><td>Use biometric / fingerprint</td><td>Only for app lock, which is off until you turn it on. Android checks your fingerprint, face or screen lock and tells the app only whether it matched; the app never sees or stores them.</td></tr>
     </tbody>
   </table>
   <p>None of these is asked for on screen; Android grants them when the app is installed. The app asks for nothing else:
@@ -72,7 +77,7 @@
   <h2>Widgets</h2>
   <p>Widgets you place on your home screen show amounts from the app, such as what you spent today, this month or per
   category, or a calendar shaded by daily spending. Anyone who can see your home screen can see them, so place them only
-  where you are comfortable. They never show your balance.</p>
+  where you are comfortable. They never show your balance, and app lock does not hide them.</p>
 
   <h2>Android backup</h2>
   <p>If Android backup is turned on for your Google account, Android may include the app's data in your device backup,
