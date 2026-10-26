@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Sadharan Pause Privacy Policy</title>
-  <meta name="description" content="Sadharan Pause keeps everything on your phone: it has no internet access. How the app uses Usage access, the pause screen and its stats.">
+  <meta name="description" content="Sadharan Pause keeps everything on your phone: it has no internet access. How the app uses its accessibility switches, Usage access and its stats.">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 <main>
   <h1>Sadharan Pause — Privacy Policy</h1>
-  <p class="meta">Effective date: 23 October 2026</p>
+  <p class="meta">Effective date: 26 October 2026</p>
 
   <p>Sadharan Pause is a simple, dark app that lets you decide when other apps may be opened, made by
   <strong>Sadharan</strong> ("we", "us"). This policy explains what the app does with information on your phone.</p>
@@ -21,11 +21,22 @@
 
   <h2>What the app reads</h2>
   <ul>
-    <li><strong>Which app is on screen.</strong> With your permission (Usage access), Pause sees which app comes to the
-    front, so it can show its pause screen when you open an app you've paused. It sees only which app it is and when,
-    never what you do inside it.</li>
-    <li><strong>Your phone's own record of app use.</strong> The same permission lets Pause read how long each app was
-    open, from the record Android already keeps (usually about the last 10 days). Pause uses it for the Stats tab.</li>
+    <li><strong>Which app is on screen.</strong> With your permission (the "Sadharan Pause" switch in Android's
+    accessibility settings), Pause learns when a screen of some app comes to the front: which app it is, and the name of
+    that screen in the app's code. It uses that only to show its pause screen when the app is one you've paused. This
+    switch is set up so Pause can't look at what's on any screen: it can't read text, messages or anything you type.
+    Android's messages about a new screen can include that screen's title; Pause doesn't use or keep it.</li>
+    <li><strong>Your phone's own record of app use (optional).</strong> With Usage access, Pause reads how long each app
+    was open, from the record Android already keeps (usually about the last 10 days), for the Stats tab. When the
+    accessibility switch reconnects after the phone closed Pause, Pause also uses this record to see which app is in
+    front, so it can cover a paused app straight away.</li>
+    <li><strong>Whether Reels or Shorts are on screen (optional).</strong> If you choose to limit or block Reels, Shorts
+    or Spotlight, and turn on the separate "Sadharan Pause: Short videos" switch in Android's accessibility settings,
+    Pause looks at the layout of Instagram, YouTube
+    and Snapchat (and no other app) only to tell whether their short-video player is showing and when you swipe to the
+    next video, so it can count them. When you reach your number for the day, or if you blocked them, Pause goes back.
+    It doesn't read the text on screen, which videos you watch, your messages or anything you type, and it doesn't save
+    or send what it sees.</li>
     <li><strong>The apps you can open.</strong> Pause lists the apps on your home screen (their names and icons), so you
     can pick which to pause.</li>
   </ul>
@@ -35,8 +46,11 @@
   else.</p>
   <ul>
     <li><strong>Your rules.</strong> Which apps are paused, and how: paused completely, open only at times you chose, a
-    break after each use, or your default rule. For an app with a break, when you last left it.</li>
-    <li><strong>Your choices.</strong> For example how "Open anyway" works, and whether Pause is on.</li>
+    break after each use, or your usual times. For an app with a break, when you last left it.</li>
+    <li><strong>Your choices.</strong> For example how "Open anyway" works, whether Pause is on, and how many Reels or
+    Shorts a day each app allows.</li>
+    <li><strong>Today's Reels count.</strong> How many Reels, Shorts or Spotlight videos you've watched today in each app
+    you limited: just a number per app, not which videos. It starts again at midnight.</li>
     <li><strong>What Pause did.</strong> Each time the pause screen came up, and whether you chose "Open anyway". Kept
     for 60 days, for the Stats tab.</li>
     <li><strong>Daily app times.</strong> How long each app was open on each day, saved before Android's own record
@@ -57,23 +71,26 @@
   <table>
     <thead><tr><th>Permission</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Usage access</td><td>To see which app comes to the front, and how long apps were open (for Stats). You turn it on in Android's settings; Pause asks first and explains why.</td></tr>
-      <tr><td>Display over other apps</td><td>To bring up the pause screen over a paused app. Pause shows nothing else over other apps. You turn it on in Android's settings.</td></tr>
-      <tr><td>Run in the foreground</td><td>Pause keeps running while any app is paused, so it can step in. Android shows a quiet notification while it does.</td></tr>
-      <tr><td>Notifications (optional)</td><td>For that one notification. It never makes a sound. Pause works without it.</td></tr>
-      <tr><td>Run at startup</td><td>So paused apps stay paused after the phone restarts.</td></tr>
+      <tr><td>Accessibility: "Sadharan Pause"</td><td>To notice when a paused app comes to the front and show the pause screen. It can't see what's on the screen. You turn it on in Android's settings; Pause explains it first.</td></tr>
+      <tr><td>Accessibility: "Sadharan Pause: Short videos" (optional)</td><td>Only to limit or block Reels, Shorts and Spotlight, if you choose to: to see when their player is on screen in Instagram, YouTube or Snapchat, count the videos, and go back when you reach your limit. You turn it on in Android's settings; Pause explains it first.</td></tr>
+      <tr><td>Usage access (optional)</td><td>How long apps were open, for the Stats tab, and which app is in front when Pause comes back after the phone closed it. You turn it on in Android's settings.</td></tr>
     </tbody>
   </table>
   <p>Pause asks for nothing else: no internet, contacts, location, camera, microphone, storage or accounts. From
-  Settings it can open Android's battery and app settings, where you can let it keep running; it doesn't change them
-  itself.</p>
+  Settings it can open Android's app settings, where you can let it keep running; it doesn't change them itself.</p>
+
+  <h2>A limit worth knowing</h2>
+  <p>Some phones close apps on their own, for example when you clear recent apps. Android then brings Pause back,
+  usually within half a minute, and Pause covers any paused app that's open. Until then, paused apps open as usual. No
+  app can stop a phone from doing this; locking Pause in recent apps, or letting it run without battery limits, closes
+  the gap. Pause's Settings show how on your phone.</p>
 
   <h2>Backup</h2>
   <p>Pause's information is not included in Android's cloud backup or when you move to a new phone, so it never leaves
   this phone that way either. A new phone starts fresh.</p>
 
   <h2>Keeping and deleting your information</h2>
-  <p>Everything stays on your phone until you remove it. You can unpause apps, clear the Stats tab's records with
+  <p>Everything stays on your phone until you remove it. You can unpause apps, let Reels or Shorts open as usual again, clear the Stats tab's records with
   <strong>Clear stats</strong> in Settings, or delete everything by clearing the app's storage or uninstalling it.
   Feedback emails you sent us can be deleted on request.</p>
 
